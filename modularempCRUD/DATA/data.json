@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "name": "Emily Johnson",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 35000,
+    "email": "emily.johnson@example.com",
+    "password": "$2b$05$LUajhLXAsjSfHdS95uea9.xo2TqF7Q7vVCfVFKUMaDkrW6O6lo0Lq",
+    "age": 22,
+    "privilege": "emp"
+  },
+  {
+    "id": 2,
+    "name": "Michael Smith",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 55000,
+    "email": "michael.smith@example.com",
+    "password": "$2b$05$zf3eYQx6j7BwCmh6UaYYaOmQWmG8KCZydYOE2c/XIU2wii5pD/wUW",
+    "age": 28,
+    "privilege": "emp"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Brown",
+    "position": "Tester",
+    "department": "Fullstack",
+    "salary": 45000,
+    "email": "sophia.brown@example.com",
+    "password": "$2b$05$HXXnFhHwXacnoVEqZaFbHuH6Yr8HQb27AqP/AmFEaPTebFn1W09Qy",
+    "age": 25,
+    "privilege": "emp"
+  },
+  {
+    "id": 4,
+    "name": "William Miller",
+    "position": "QA",
+    "department": "Backend",
+    "salary": 42000,
+    "email": "william.miller@example.com",
+    "password": "$2b$05$QRP7aP3Zq661N5yTpZla5O0TlkAlsw8vzCqiGao90hpX4oQY0AE/e",
+    "age": 27,
+    "privilege": "emp"
+  },
+  {
+    "id": 5,
+    "name": "Olivia Jones",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 36000,
+    "email": "olivia.jones@example.com",
+    "password": "$2b$05$rrtYT9.HxDepbVXg0KaEU.T1S42kVVKHUSlNUWdGlDMtN90CkmuFi",
+    "age": 21,
+    "privilege": "emp"
+  },
+  {
+    "id": 6,
+    "name": "James Davis",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 56000,
+    "email": "james.davis@example.com",
+    "password": "$2b$05$DLuBgXOciNtsYeMijGqjqOWSGdUR7gOZJMUmqdZgjOlL69ncdYL8O",
+    "age": 29,
+    "privilege": "emp"
+  },
+  {
+    "id": 7,
+    "name": "Emma Wilson",
+    "position": "Tester",
+    "department": "Fullstack",
+    "salary": 47000,
+    "email": "emma.wilson@example.com",
+    "password": "$2b$05$LVsiycrBy3jwZcSWMhxnROuMCSbtHqP/273w.X0MC5ysc5U6g3SiG",
+    "age": 26,
+    "privilege": "emp"
+  },
+  {
+    "id": 8,
+    "name": "Alexander Taylor",
+    "position": "QA",
+    "department": "Backend",
+    "salary": 43000,
+    "email": "alexander.taylor@example.com",
+    "password": "$2b$05$WxRJz7GEVJ0QPripabpfsuyo.32NonoSiYYcw3VdyawLsYDPFi61.",
+    "age": 28,
+    "privilege": "emp"
+  },
+  {
+    "id": 9,
+    "name": "Ava Martinez",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 37000,
+    "email": "ava.martinez@example.com",
+    "password": "$2b$05$sR4x6LHD3hedn4YLMjOKgefCOyNOt/8jr3SQYWddPZh2GYHqXhcSG",
+    "age": 22,
+    "privilege": "emp"
+  },
+  {
+    "id": 10,
+    "name": "Liam Anderson",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 57000,
+    "email": "liam.anderson@example.com",
+    "password": "$2b$05$0kgnIGezTaMC3KEdJFsPOuxYbSgipfO0m00yCCyVKLH3OBV64RTh.",
+    "age": 30,
+    "privilege": "emp"
+  },
+  {
+    "id": 11,
+    "name": "Isabella Garcia",
+    "position": "Tester",
+    "department": "Fullstack",
+    "salary": 48000,
+    "email": "isabella.garcia@example.com",
+    "password": "$2b$05$s3ZGg3ICc8g7LtGIrotIdOGF2JkDvqsJZqMu6q2wsHcR5pvhTYpha",
+    "age": 27,
+    "privilege": "emp"
+  },
+  {
+    "id": 12,
+    "name": "Noah Rodriguez",
+    "position": "QA",
+    "department": "Backend",
+    "salary": 44000,
+    "email": "noah.rodriguez@example.com",
+    "password": "$2b$05$CuocWnK2lVqsxwJzYAd0XurpXXC5sgTzxRXy3VzN6r8i7a6.Yxj.O",
+    "age": 29,
+    "privilege": "emp"
+  },
+  {
+    "id": 13,
+    "name": "Mia Martinez",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 38000,
+    "email": "mia.martinez@example.com",
+    "password": "$2b$05$SDV1/KM15r4LQFVRod5Q4OlHM6572hrPuB8QDna/Awe3CONUa.uGu",
+    "age": 23,
+    "privilege": "emp"
+  },
+  {
+    "id": 14,
+    "name": "Ethan Hernandez",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 58000,
+    "email": "ethan.hernandez@example.com",
+    "password": "$2b$05$N9ZGvCOvwF/Yjg0HWQtGSel.e2HI6kRkGcvoDzdYjuBHsLSUHvgAS",
+    "age": 31,
+    "privilege": "emp"
+  },
+  {
+    "id": 15,
+    "name": "Charlotte Martinez",
+    "position": "Tester",
+    "department": "Fullstack",
+    "salary": 49000,
+    "email": "charlotte.martinez@example.com",
+    "password": "$2b$05$tP2L5SzXCob8PVDxNJ2Ppu1EEpeDDH742dwtd001DLf76QZ8hags2",
+    "age": 28,
+    "privilege": "emp"
+  },
+  {
+    "id": 16,
+    "name": "Oliver Clark",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 39000,
+    "email": "oliver.clark@example.com",
+    "password": "$2b$05$NqWvmtFBqVBZXFU8ZQwrHOXR65qM0xtUYyptzmgtW5xksEvjByOga",
+    "age": 24,
+    "privilege": "admin"
+  },
+  {
+    "id": 17,
+    "name": "Aria Garcia",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 59000,
+    "email": "aria.garcia@example.com",
+    "password": "$2b$05$v0BeG7MU6PlSVuNM6bplFOJzTUZ9XZlKdtz49xPb1l8bCyr1PBltO",
+    "age": 32,
+    "privilege": "admin"
+  },
+  {
+    "name": "John Doe",
+    "password": "$2b$05$0a0l5VijY8C5HqeueqEUFOcIerp0ww7rEVpcavc/AQqugoLISOVWa",
+    "email": "doe@gmail.com",
+    "age": 20,
+    "position": "Developer",
+    "department": "Frontend",
+    "salary": 100000,
+    "privilege": "emp",
+    "id": 18
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "name": "Emily Johnson",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 35000,
+    "email": "emily.johnson@example.com",
+    "password": "Pass12!23d",
+    "age": 22,
+    "privilege": "emp"
+  },
+  {
+    "id": 2,
+    "name": "Michael Smith",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 55000,
+    "email": "michael.smith@example.com",
+    "password": "Mik3!456",
+    "age": 28,
+    "privilege": "emp"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Brown",
+    "position": "Tester",
+    "department": "Fullstack",
+    "salary": 45000,
+    "email": "sophia.brown@example.com",
+    "password": "Browns1!23",
+    "age": 25,
+    "privilege": "emp"
+  },
+  {
+    "id": 4,
+    "name": "William Miller",
+    "position": "QA",
+    "department": "Backend",
+    "salary": 42000,
+    "email": "william.miller@example.com",
+    "password": "Wm1!3456",
+    "age": 27,
+    "privilege": "emp"
+  },
+  {
+    "id": 5,
+    "name": "Olivia Jones",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 36000,
+    "email": "olivia.jones@example.com",
+    "password": "Jones12!3",
+    "age": 21,
+    "privilege": "emp"
+  },
+  {
+    "id": 6,
+    "name": "James Davis",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 56000,
+    "email": "james.davis@example.com",
+    "password": "Dav1s!456",
+    "age": 29,
+    "privilege": "emp"
+  },
+  {
+    "id": 7,
+    "name": "Emma Wilson",
+    "position": "Tester",
+    "department": "Fullstack",
+    "salary": 47000,
+    "email": "emma.wilson@example.com",
+    "password": "Wilson$123",
+    "age": 26,
+    "privilege": "emp"
+  },
+  {
+    "id": 8,
+    "name": "Alexander Taylor",
+    "position": "QA",
+    "department": "Backend",
+    "salary": 43000,
+    "email": "alexander.taylor@example.com",
+    "password": "Tay1or!23",
+    "age": 28,
+    "privilege": "emp"
+  },
+  {
+    "id": 9,
+    "name": "Ava Martinez",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 37000,
+    "email": "ava.martinez@example.com",
+    "password": "Mart1nez!2",
+    "age": 22,
+    "privilege": "emp"
+  },
+  {
+    "id": 10,
+    "name": "Liam Anderson",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 57000,
+    "email": "liam.anderson@example.com",
+    "password": "And3rson!4",
+    "age": 30,
+    "privilege": "emp"
+  },
+  {
+    "id": 11,
+    "name": "Isabella Garcia",
+    "position": "Tester",
+    "department": "Fullstack",
+    "salary": 48000,
+    "email": "isabella.garcia@example.com",
+    "password": "Garc1a$23",
+    "age": 27,
+    "privilege": "emp"
+  },
+  {
+    "id": 12,
+    "name": "Noah Rodriguez",
+    "position": "QA",
+    "department": "Backend",
+    "salary": 44000,
+    "email": "noah.rodriguez@example.com",
+    "password": "Rodr1guez!2",
+    "age": 29,
+    "privilege": "emp"
+  },
+  {
+    "id": 13,
+    "name": "Mia Martinez",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 38000,
+    "email": "mia.martinez@example.com",
+    "password": "Mia123!45",
+    "age": 23,
+    "privilege": "emp"
+  },
+  {
+    "id": 14,
+    "name": "Ethan Hernandez",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 58000,
+    "email": "ethan.hernandez@example.com",
+    "password": "Hernand3z$12",
+    "age": 31,
+    "privilege": "emp"
+  },
+  {
+    "id": 15,
+    "name": "Charlotte Martinez",
+    "position": "Tester",
+    "department": "Fullstack",
+    "salary": 49000,
+    "email": "charlotte.martinez@example.com",
+    "password": "Mart1nez$123",
+    "age": 28,
+    "privilege": "emp"
+  },
+  {
+    "id": 16,
+    "name": "Oliver Clark",
+    "position": "Intern",
+    "department": "Frontend",
+    "salary": 39000,
+    "email": "oliver.clark@example.com",
+    "password": "Clark1!23",
+    "age": 24,
+    "privilege": "admin"
+  },
+  {
+    "id": 17,
+    "name": "Aria Garcia",
+    "position": "Developer",
+    "department": "Backend",
+    "salary": 59000,
+    "email": "aria.garcia@example.com",
+    "password": "Garc1@567",
+    "age": 32,
+    "privilege": "admin"
+  }
+]
