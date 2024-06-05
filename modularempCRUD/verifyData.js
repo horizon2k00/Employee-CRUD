@@ -14,7 +14,7 @@ function exists(req,res,next){
     }
 }
 
-function jwtAuth(req,res,next){
+function jwtAuth(req,res,next){           
     try{
         const secret = process.env.SECRET_KEY;
         req.jwtPayload = jwt.verify(req.get('Authorization'),secret);
@@ -24,10 +24,12 @@ function jwtAuth(req,res,next){
         // console.log(''+err);
         res.send('Your token is invalid');
     }
+    // next();
 }
 
-function isAdmin(req){
+function isAdmin(req){                       
     return req.jwtPayload.privilege === 'admin';
+    // return true;
 }
 
 function authorizedUser(payload, empData,specifyAuth){
@@ -45,16 +47,17 @@ function authorizedUser(payload, empData,specifyAuth){
         else if(specifyAuth === 'personal') return true;
         else return false;
     }else return false;
+    // return true;
 }
   
 function findEmp(emp,key,parameter){
     const index = emp.findIndex((e)=>e[key] === parameter)
-    if(index === -1) return null;
-    else return index;
+    // if(index === -1) return null;
+    return index;
 }
 
 function checkIndex(i, returnMsg,res){
-    if(i !== null) return;
+    if(i !== -1) return;
     else{
      res.send(returnMsg);
     }
@@ -179,4 +182,16 @@ function verifyPriv(req,res,next){
     }
 }
 
-module.exports = {exists,jwtAuth,isAdmin,checkIndex,findEmp,authorizedUser,verifyName,verifyAge,verifyEmail,verifyDep,verifyPass,verifyPos,verifySal,verifyPriv};
+function verifyRating(req,res,next){
+    if(!req.body.rating){
+        next();
+    }else{
+        if(req.body.rating < 0 || req.body.rating > 5){
+            res.send('Rating must be a decimal between 0 and 5');
+        }else{
+            next();
+        }
+    }
+}
+
+module.exports = {exists,jwtAuth,isAdmin,checkIndex,findEmp,authorizedUser,verifyName,verifyAge,verifyEmail,verifyDep,verifyPass,verifyPos,verifySal,verifyPriv,verifyRating};

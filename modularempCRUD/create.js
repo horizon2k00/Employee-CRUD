@@ -14,68 +14,6 @@ function exists(req,res,next){
     next();
 }
 
-// console.log(employees);
-
-// function nameAuth(req,res,next){
-//     if(!res.newData.name){
-//         res.send('Please enter name');
-//     }else if(res.newData.name.charAt(0)<='9'){
-//         res.send('name must start with a letter');
-//     }else{
-//         next();
-//     }
-// }
-
-// function ageAuth(req, res, next){ 
-//     if(!res.newData.age){
-//         res.send('Please enter age');
-//     }else if(typeof(res.newData.age) !== 'number'){
-//         res.send('age has to be a number');
-//     }else if(res.newData.age<18 || res.newData.age>60){
-//         res.send('Age must be between 18 and 60 only')
-//     }else{
-//         next();
-//     }
-// }
-
-// function passAuth(req,res,next){
-//     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,30}$/;
-//     const pass = res.newData.password;
-//     if(pass.length<8){
-//         res.send('password must be at least 8 characters long');
-//     }else if(!regex.test(pass)){
-//         res.send('Password must contain at least one caps, one number, and one special character');
-//     }else{
-//         next();
-//     }
-// }
-
-// function salAuth(req,res,next){
-//     if(!res.newData.salary){
-//         res.send('Please enter salary');
-//     }else if(typeof(res.newData.salary) !== 'number'){
-//         res.send('salary must be a number');
-//     }else{
-//         next();
-//     }
-// }
-
-// function depAuth(req, res, next){
-//     if(res.newData.department === 'Frontend' || res.newData.department === 'Backend' || res.newData.department === 'Fullstack' ){
-//         next();
-//     }else{
-//         res.send("Choose one of the departments - Frontend, Backend or Fullstack");
-//     }
-// }
-
-// function posAuth(req, res, next){
-//     if(res.newData.position === 'Intern' || res.newData.position === 'Developer' || res.newData.position === 'Tester' || res.newData.position === 'QA'){
-//         next();
-//     }else{
-//         res.send("Choose one of the positions - Intern, Developer, Tester or QA");
-//     }
-// }
-
 function authorizeUser(req,res,next){
     if(isAdmin(req)){
         next();
@@ -89,7 +27,10 @@ function createEntry(req,res){
     const employees = require(datapath);
     // const index = employees.findIndex((e)=>e.email === req.body.email);
     const index = findEmp(employees,'email',req.body.email);
-    if(!index){//--------------------------
+    console.log(index);
+    req.body['Joining-Date'] = Date(Date.now()).slice(4,15);
+    req.body.rating = 3;
+    if(index === -1){//--------------------------
         if(employees.length === 0){
             req.body.id = 1;
         }else{
@@ -106,23 +47,17 @@ function createEntry(req,res){
         res.send('This email is in use');
     }
 }
-// checkIndex(index,'This email is in use',res);
-// function initFn(req,res,next){
-//     console.log(req.body);
-//     // req.emp = req.body;
-//     next();
-// }
 
 router.post('/',jwtAuth,exists,authorizeUser,verifyEmail,verifyName,verifyAge,verifyDep,verifyPass,verifyPos,verifySal,verifyPriv,createEntry);
 
-router.post('/many',exists,(req,res)=>{
-    const emp = require('../refdata.json')
-    // const employees = require(datapath);
-    emp.map((e)=>{
-        e.password = bcrypt.hashSync(e.password,5);
-    });
-    fs.writeFileSync(datapath,JSON.stringify(emp));
-    res.send(emp);
-});
+// router.post('/many',exists,(req,res)=>{
+//     const emp = require('../refdata.json')
+//     // const employees = require(datapath);
+//     emp.map((e)=>{
+//         e.password = bcrypt.hashSync(e.password,5);
+//     });
+//     fs.writeFileSync(datapath,JSON.stringify(emp));
+//     res.send(emp);
+// });
 
 module.exports = router;

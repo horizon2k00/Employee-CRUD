@@ -1,12 +1,23 @@
 const express = require('express');
+const { average } = require('./modularempCRUD/filterData');
 const app = express();
 // require('dotenv').config();
-const bcrypt = require('bcrypt');
-const emp = require('./modularempCRUD/DATA/data.json');
+// const bcrypt = require('bcrypt');
+// const emp = require('./modularempCRUD/DATA/data.json');
 // const process =  require('process');
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
+const a = {
+    name:"ksh",
+    age:20
+}
+const b = a;
+b.name='kaif';
+console.log(a);
+// date.setTime(a);
+// console.log(date.toString());
+// console.log(a);
 // console.log('code start');
 
 // app.get('/',(req,res, next)=>{
@@ -20,11 +31,13 @@ app.use(express.urlencoded({extended:true}));
 
 // app.listen(5555,()=>{
 //     console.log(`listening to port 5555`);
-// })
+// // })
+// const d = new Date();
+// console.log(new Date().toDateString().slice(4,15));
 
-const a = [1,2,3,4,5,6,7,8,1,2,3,4,6,4,2,1];
-const res = a.filter((x)=>x>4);
-console.log(Math.max(...a));
+// s = d.toDateString();
+// final = s.slice(4,s.length);
+// console.log(final);
 // console.log(res);
 // a.sort();
 // console.log(a);
@@ -92,6 +105,27 @@ console.log(Math.max(...a));
 // }
 
 // console.log(process);
+// const array = [{n:'a',a:12},{n:'c',a:10},{n:'c',a:16},{n:'c',a:12},{n:'a',a:12},{n:'b',a:18},{n:'c',a:12},{n:'b',a:11},{n:'a',a:15}];
+// const obj = {};
+// array.map(e=>{
+//     const a = e.a;
+//     obj[e.n]=[];
+// })
+// array.map(e=>{
+//     obj[e.n].push(e.a);
+// })
+// console.log(obj);
+// const output = [];
+// Object.keys(obj).forEach(key=>{
+//     let tot = 0;
+//     obj[key].map(e=>{
+//         tot+=e;
+//     })
+//     const avg = tot/obj[key].length;
+//     console.log(avg);
+//     output.push({name:key,average:avg});
 
+// })
+// console.log(output);
 
-
+// console.log(typeof(NaN));

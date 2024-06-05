@@ -5,14 +5,6 @@ const path = require('path');
 const {exists,jwtAuth, isAdmin, findEmp, checkIndex} = require('./verifyData.js');
 const datapath = path.join(__dirname,'/DATA/data.json');
 
-
-// function exists(req,res,next){
-//     if(!fs.existsSync(datapath)){
-//         res.send('no employee present in company');    
-//     }else{
-//         next();
-//     }
-// }
 router.delete('/all',jwtAuth,exists, (req, res)=>{
     if(isAdmin(req)){
         const employees = require(datapath);
