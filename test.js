@@ -7,14 +7,9 @@ const app = express();
 // const process =  require('process');
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-
-const a = {
-    name:"ksh",
-    age:20
-}
-const b = a;
-b.name='kaif';
-console.log(a);
+const b = 10
+const a = parseInt(b);
+if(a)console.log(typeof(b));
 // date.setTime(a);
 // console.log(date.toString());
 // console.log(a);
